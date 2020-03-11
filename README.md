@@ -7,3 +7,5 @@ difference. Run it in the terminal with the command:
 ```buildoutcfg
 python compareOutFiles.py outfile1 outfile2
 ```
+
+Note that infile and outfiles must be in the same directory as the python program

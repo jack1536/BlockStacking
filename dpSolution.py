@@ -145,11 +145,9 @@ def main():
     First argument is the name of the inputfile
     Second argument is the name of the output file
     """
-    #infile = open(sys.argv[1], "r")
-    #outfile = open(sys.argv[2], "w")
+    infile = open(sys.argv[1], "r")
+    outfile = open(sys.argv[2], "w")
 
-    infile = open("/Users/jackweber/CS2020/CS140/BlockStacking/infile.txt", "r")
-    outfile = open("/Users/jackweber/CS2020/CS140/BlockStacking/outfile.txt", "w")
 
     # stores lines in file in variable as list of strings where each item represents a line
     inLines = infile.read().splitlines()
@@ -185,7 +183,6 @@ def main():
     outfile.write(str(len(tallestStack)) + "\n")
     for block in tallestStack:
         outfile.write(tripToString(block) + "\n")
-
 
 if __name__ == "__main__":
     main()
